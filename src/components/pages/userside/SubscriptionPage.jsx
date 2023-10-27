@@ -1,6 +1,7 @@
 
 import axios from 'axios';
-import useRazorpay from 'react-razorpay/src';
+// import useRazorpay from 'react-razorpay/src';
+import useRazorpay from 'react-razorpay'
 import logoImage from '../../../assets/logo.png';
 import jwtDecode from 'jwt-decode';
 import { getLocal } from '../../../actions/auth';
