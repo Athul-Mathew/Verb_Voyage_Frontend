@@ -101,7 +101,7 @@ const handleReject = async (mentorId) => {
        <div className="modal-container bg-white w-96 mx-auto rounded shadow-lg z-50 overflow-y-auto">
          <div className="modal-content py-4 text-left px-6">
            <h2 className="text-2xl font-semibold mb-4">{selectedRequest.name}</h2>
-           <img src={BACKEND_BASE_URL+selectedRequest.image} alt={selectedRequest.name} className="w-full mb-4 rounded-lg" />
+           <img src={selectedRequest.image} alt={selectedRequest.name} className="w-full mb-4 rounded-lg" />
            <div className="mb-4">
              <p className="text-lg mb-2">
                <span className="text-blue-600 font-bold">Email:</span> {' '}

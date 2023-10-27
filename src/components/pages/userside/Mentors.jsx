@@ -50,7 +50,7 @@ function MentorList() {
               >
                 <Link to={`/mentorchat/${mentor.id}`} className="flex flex-col items-center">
                   <img
-                    src={`${BACKEND_BASE_URL}${mentor?.image_url}`}
+                    src={`${mentor?.image_url}`}
                     alt="profile"
                     className="w-full h-40 object-cover rounded-lg mb-4"
                   />

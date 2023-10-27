@@ -75,7 +75,7 @@ console.log(name)
       <div className="flex flex-col items-center mb-8">
         <img
           className="w-32 h-32 rounded-full mb-4 "
-          src={BACKEND_BASE_URL+profileImage}
+          src={profileImage}
           alt={`${name.name}'s Profile Photo`}
         />
         <h1 className="text-3xl font-bold text-white">{name.name}'s Profile</h1>
