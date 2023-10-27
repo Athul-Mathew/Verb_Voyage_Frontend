@@ -1,17 +1,13 @@
 
 import axios from 'axios';
-import useRazorpay from 'react-razorpay';
+import useRazorpay from 'react-razorpay/src';
 import logoImage from '../../../assets/logo.png';
 import jwtDecode from 'jwt-decode';
 import { getLocal } from '../../../actions/auth';
 import { BACKEND_BASE_URL } from '../../../utils/Config';
 import { RAZORPAY_KEY } from '../../../utils/Config';
-import Loader from '../Loader';
 import React, { useState, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import { usePremium } from './PremiumContext';
-import Razorpay from 'react-razorpay';
-import { setAppElement } from 'react-modal';
 
 
 function VipPay() {
@@ -60,7 +56,7 @@ function VipPay() {
     //   navigate('/success')
       
     // }
-  })
+  },[])
 
   const [Razorpay] = useRazorpay();
 
