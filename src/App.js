@@ -17,7 +17,7 @@ import { PremiumProvider } from "./components/pages/userside/PremiumContext";
 import ForgotPassword from "../src/components/pages/registration/forgotpassword";
 import Reset from '../src/components/pages/registration/resetpassword'
 
-import { getLocal } from '../../login/src/actions/auth';
+import { getLocal } from './actions/auth';
 import jwtDecode from "jwt-decode";
 import AdminRoute from "./components/Routers/admin";
 import MentorRoute from "./components/Routers/mentor";
