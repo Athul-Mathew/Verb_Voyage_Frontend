@@ -46,7 +46,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "rm -rf ../backend/build && react-scripts build && cp -r build ../backend/build ",
+    "build": "rimraf ../backend/build && react-scripts build && xcopy /E /I build ..\\backend\\build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -69,6 +69,7 @@
     ]
   },
   "devDependencies": {
+    "rimraf": "^5.0.5",
     "tailwindcss": "^3.3.3"
   }
 }
